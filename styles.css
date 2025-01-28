@@ -1,0 +1,361 @@
+/* Réinitialisation de base */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Calibri, sans-serif;
+    line-height: 1.6;
+    color: #fff;
+    background: linear-gradient(to bottom,#013220 ,#228B22 );
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+header {
+    background-color: rgb(1, 40, 32);
+    padding: 10px 20px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000; /* S'assure que le header reste au-dessus des autres éléments */
+}
+
+
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    height: 50px; /* Ajuste la hauteur du logo pour correspondre à la barre d'entête */
+    margin-right: 10px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #90EE90;
+}
+
+main {
+    flex: 1;
+    padding: 20px;
+    max-width: 1200px;
+    margin: 70px auto 0;
+}
+
+.welcome-section {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.welcome-section h2 {
+    font-size: 2.5em;
+    margin-bottom: 10px;
+}
+
+.welcome-section h3 {
+    margin-bottom: 10px;
+    font-size: 1.5em;
+    text-align: center;
+}
+
+.welcome-section p {
+    font-size: 1.2em;
+}
+
+.welcome-separator {
+    margin-top: 50px; /* Espace avec le contenu au-dessus */
+    text-align: center; /* Centre les images */
+    position: relative; /* Position relative pour placer la ligne et les icônes correctement */
+}
+
+.welcome-separator .line {
+    height: 4px; /* Épaisseur de la ligne */
+    background-color: white; /* Couleur de la ligne */
+    width: 100%; /* Ligne s'étendant sur toute la largeur */
+    margin: 0 auto; /* Centre la ligne */
+    border-radius: 50px;
+}
+
+.welcome-separator .icons {
+    display: flex; /* Positionne les icônes côte à côte */
+    justify-content: center; /* Centre les icônes horizontalement */
+    gap: 100px; /* Espacement entre les icônes */
+    position: absolute; /* Position absolue par rapport au parent */
+    top: -50px; /* Place les icônes au-dessus de la ligne */
+    width: 100%; /* S'assure que le conteneur prend toute la largeur */
+}
+
+.welcome-separator .icons img {
+    height: 50px; /* Taille des icônes, ajuste selon tes besoins */
+    width: auto; /* Conserve les proportions */
+}
+
+.events-section {
+    display: flex;
+    margin-top: 10px;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.event {
+    flex: 1;
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 15px;
+    border-radius: 8px;
+    text-align: center;
+}
+
+.event img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+.event p {
+    font-size: 1.2em;
+    margin-top: 10px;
+}
+
+.divisions-section {
+    display: flex;
+    margin-top: 10px;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.division {
+    flex: 1;
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 15px;
+    border-radius: 8px;
+    text-align: center;
+}
+
+.division img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+.division h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 2em;
+}
+
+.division a {
+    display: inline-block; /* Pour donner des dimensions au lien comme un bouton */
+    padding: 10px 20px; /* Espacement autour du texte */
+    margin-top: 30px;
+    background-color: #2d6a4f; /* Couleur de fond verte foncée */
+    color: white; /* Couleur du texte */
+    text-decoration: none; /* Supprimer la décoration de lien (soulignement) */
+    border-radius: 12px; /* Angles arrondis */
+    font-size: 32px; /* Taille du texte */
+    text-align: center; /* Centrer le texte à l'intérieur du bouton */
+    transition: background-color 0.3s; /* Transition douce pour le changement de couleur au survol */
+  }
+  
+.division a:hover {
+    background-color: #3b8c6f; /* Couleur de fond verte plus claire au survol */
+  }
+
+.division img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+.division p {
+    font-size: 1.2em;
+    margin-top: 10px;
+}
+
+.division li {
+    list-style-type: disc;
+    margin-left: 20px;
+    font-size: 1.1em;
+}
+
+.programming-section {
+    margin-top: 40px;
+    padding: 20px;
+}
+
+.event-list {
+    margin-bottom: 30px;
+}
+
+.event-list h3 {
+    margin-bottom: 10px;
+    font-size: 1.5em;
+    text-align: center;
+}
+
+.dates {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+    list-style-position: inside;
+    padding: 0;
+}
+
+.dates li {
+    list-style-type: disc;
+    margin-left: 10px;
+    font-size: 1.1em;
+}
+
+.contact-section {
+    display: flex;
+    flex-wrap: wrap;
+    width: 1000px;
+    gap: 20px;
+    margin-top: 10px;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 8px;
+    
+}
+
+.address-map {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.address {
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 15px;
+    border-radius: 8px;
+    color: #fff;
+}
+
+.map iframe {
+    border-radius: 8px;
+    border: none;
+}
+
+.contact-form {
+    flex: 1;
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 15px;
+    border-radius: 8px;
+    color: #fff;
+}
+
+.contact-form h3 {
+    margin-bottom: 10px;
+    text-align: center;
+    font-size: 1.8em;
+}
+
+.contact-form label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 20px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1em;
+}
+
+.contact-form button {
+    display: block;
+    width: 100%;
+    padding: 20px;
+    background-color: #228B22;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.2em;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.contact-form button:hover {
+    background-color: #90EE90;
+}
+
+footer {
+    background-color: rgb(1, 40, 32);
+    text-align: center;
+    padding: 10px;
+}
+
+.side-arm {
+    position: fixed; /* Suivent le défilement de la page */
+    z-index: -1; /* Passe en dessous des textes et des divisions */
+}
+
+.side-arm img {
+    width: 400px; /* Taille des bras, ajuste si besoin */
+    height: auto; /* Conserve les proportions */
+}
+
+/* Bras gauche */
+.left-arm {
+    left: -50px; /* Positionne en dehors de l'écran à gauche */
+}
+
+/* Bras droit */
+.right-arm {
+    right: -50px; /* Positionne en dehors de l'écran à droite */
+}
+
+/* Position spécifique pour chaque bras */
+.arm-1 {
+    top: 15%; /* Ajuste verticalement pour le bras gauche 1 */
+}
+
+.arm-2 {
+    top: 60%; /* Ajuste verticalement pour le bras gauche 2 */
+}
+
+.arm-3 {
+    top: 5%; /* Ajuste verticalement pour le bras droit 1 */
+}
+
+.arm-4 {
+    top: 50%; /* Ajuste verticalement pour le bras droit 2 */
+}
