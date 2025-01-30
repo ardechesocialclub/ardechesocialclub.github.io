@@ -210,6 +210,71 @@ main {
     font-size: 1.1em;
 }
 
+.divisionsloc-section {
+    margin-top: 10px;
+    display: flex;
+    flex-wrap: wrap; /* Permet le passage à la ligne */
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.divisionloc {
+    flex: 1 1 calc(50% - 20px); /* 50% de la largeur moins l'espace entre les éléments */
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 15px;
+    border-radius: 8px;
+    text-align: center;
+    min-height: 150px; /* Ajuste la hauteur minimale */
+}
+
+.divisionloc img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+.divisionloc h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 2em;
+}
+
+.divisionloc a {
+    display: inline-block; /* Pour donner des dimensions au lien comme un bouton */
+    padding: 10px 20px; /* Espacement autour du texte */
+    margin-top: 30px;
+    background-color: #2d6a4f; /* Couleur de fond verte foncée */
+    color: white; /* Couleur du texte */
+    text-decoration: none; /* Supprimer la décoration de lien (soulignement) */
+    border-radius: 12px; /* Angles arrondis */
+    font-size: 32px; /* Taille du texte */
+    text-align: center; /* Centrer le texte à l'intérieur du bouton */
+    transition: background-color 0.3s; /* Transition douce pour le changement de couleur au survol */
+  }
+  
+.divisionloc a:hover {
+    background-color: #3b8c6f; /* Couleur de fond verte plus claire au survol */
+  }
+
+.divisionloc img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+.divisionloc p {
+    font-size: 1.2em;
+    margin-top: 10px;
+}
+
+.divisionloc li {
+    list-style-type: disc;
+    margin-left: 20px;
+    font-size: 1.1em;
+}
+
 .programming-section {
     margin-top: 40px;
     padding: 20px;
@@ -242,7 +307,7 @@ main {
 .contact-section {
     display: flex;
     flex-wrap: wrap;
-    width: 1000px;
+   /* width: 1000px;*/
     gap: 20px;
     margin-top: 10px;
     padding: 20px;
@@ -358,4 +423,79 @@ footer {
 
 .arm-4 {
     top: 50%; /* Ajuste verticalement pour le bras droit 2 */
+}
+
+.menu-toggle {
+    display: none;
+    font-size: 28px;
+    color: white;
+    background: none;
+    border: none;
+    cursor: pointer;
+    position: absolute;
+    top: 15px;
+    right: 20px;
+}
+
+/* Styles du menu responsive */
+@media screen and (max-width: 768px) {
+    /* Cacher le menu par défaut */
+    nav ul {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        width: 100%;
+        background-color: rgba(0, 0, 0, 0.8);
+        text-align: center;
+        padding: 10px 0;
+    }
+
+    /* Afficher le menu lorsqu'il est actif */
+    nav ul.active {
+        display: flex;
+    }
+
+    nav ul li {
+        margin: 10px 0;
+    }
+
+    /* Afficher le menu burger */
+    .menu-toggle {
+        display: block;
+    }
+
+    .welcome-section h2 {
+        font-size: 1.8em; /* Réduction de la taille du titre */
+    }
+
+    .welcome-section p {
+        font-size: 1em; /* Réduction de la taille du paragraphe */
+    }
+    .division h2 {
+        font-size: 1.8em; /* Réduction de la taille du titre */
+    }
+
+    .division p {
+        font-size: 1em; /* Réduction de la taille du paragraphe */
+    }
+
+    .event-list h3 {
+        font-size: 1.2em;
+    }
+
+    .dates li {
+        font-size: 0.6em;
+        margin-left: 0px;
+    }
+
+    .programming-section {
+        margin-top: 10px;
+    }
+
+    .divisionloc {
+        flex: 1 1 100%; /* Prend toute la largeur */
+    }
+
 }
