@@ -439,6 +439,7 @@ footer {
 
 /* Styles du menu responsive */
 @media screen and (max-width: 768px) {
+    
     /* Cacher le menu par défaut */
     nav ul {
         display: none;
@@ -466,15 +467,20 @@ footer {
         display: block;
     }
 
+    header h1
+    {
+        font-size: 1.5em; /* Réduction de la taille du titre */
+    }
+
     .welcome-section h2 {
-        font-size: 1.8em; /* Réduction de la taille du titre */
+        font-size: 1.5em; /* Réduction de la taille du titre */
     }
 
     .welcome-section p {
         font-size: 1em; /* Réduction de la taille du paragraphe */
     }
     .division h2 {
-        font-size: 1.8em; /* Réduction de la taille du titre */
+        font-size: 1.5em; /* Réduction de la taille du titre */
     }
 
     .division p {
