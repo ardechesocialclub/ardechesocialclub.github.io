@@ -42,7 +42,7 @@ header {
 
 .logo img {
     height: 50px; /* Ajuste la hauteur du logo pour correspondre à la barre d'entête */
-    margin-right: 10px;
+    margin-right: 5px;
 }
 
 nav ul {
@@ -492,7 +492,7 @@ footer {
     }
 
     .dates li {
-        font-size: 0.6em;
+        font-size: 1em;
         margin-left: 0px;
     }
 
