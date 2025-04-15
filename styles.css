@@ -438,7 +438,7 @@ footer {
 }
 
 /* Styles du menu responsive */
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 900px) {
     
     /* Cacher le menu par défaut */
     nav ul {
